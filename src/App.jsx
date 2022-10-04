@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='card_title'><h1 className='title'>Rick and Morty</h1>
+      <div className='card_title'><a className='title' href="#">Rick and Morty</a>
       <form onSubmit={handleSubmit}>
         <input className='input_search' id="idLocation" placeholder='location number (1-126)' type="text" onChange={handleChange}/>
         <button className='button_search'>Search</button>
@@ -81,7 +81,7 @@ function App() {
         </div>
        </>
       }
-
+    <div className='card_scroll'><a href="#"><img className='card_scroll_img' src="https://media1.giphy.com/media/3o7aD2d7hy9ktXNDP2/giphy.gif" alt="" /></a></div>
     <footer>Hecho con ❤ por Walter Daza</footer>
     </div>
   )

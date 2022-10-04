@@ -13,10 +13,8 @@ body{
 }
 
 .card_title{
-    position: fixed;
-    top: 0;
     width: 98.5%;
-    background-image: url(https://64.media.tumblr.com/51015ec638a516f7f7d353ca198a5091/tumblr_pdbo9wBAe11xd0gvgo1_1280.gif);
+    background-image:url(https://media1.giphy.com/media/3o7aD2d7hy9ktXNDP2/giphy.gif);
     background-position: center ;
     background-size: cover; 
     height: 200px;
@@ -24,7 +22,6 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 4;
-    box-shadow: 0px 0px 15px -1px rgb(64, 186, 223);
 }
 .title{
     margin: 0;
@@ -34,6 +31,7 @@ body{
     font-size: 70px;
     text-shadow: 10px 10px black;
     text-align: center;
+    text-decoration: none;
 }
 .button_search{
     display: none;
@@ -41,7 +39,7 @@ body{
 .input_search{
     position: absolute;
     left:50%;
-    top:85%;
+    top:27%;
     transform: translate(-50%, -50%);
     border: none;
     border-radius: 5px;
@@ -49,24 +47,27 @@ body{
     width: 300px;
     outline: none;
     background-color: rgb(255, 255, 255, 0.8);
+    z-index: 5;
 }
 .card_locationInfo{
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 7;
 }
 .subCard_locationInfo{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:rgb(15, 32, 67, 0.4);
+    background-color:rgb(15, 32, 67, 1);
     width: 1108px;
     margin: 10px;
     border-radius:5px ;
     color: rgba(255, 255, 255, 0.616);
     font-family: 'Balsamiq Sans', cursive;
     text-align: center;
-    margin-top:200px;
     padding: 15px;
     box-shadow: 0px 0px 10px -1px white;
 }
@@ -96,8 +97,9 @@ body{
 }
 
 .Subcard_cardResident:hover{
-    transform: scale(1.05);
+    transform: scale(1.07);
     transition: transform 100ms ease;
+    box-shadow: 0px 0px 20px -1px rgb(212, 80, 230);
 }
 
 .img_status{
@@ -149,13 +151,6 @@ body{
     color: white;
     text-decoration: overline;
 }
-footer{
-    padding: 40px;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    font-family: 'Balsamiq Sans', cursive;
-}
 .card_error{
     display: flex;
     justify-content: center;
@@ -175,7 +170,22 @@ footer{
     padding: 15px;
     box-shadow: 0px 0px 15px -1px white;
 }
+footer{
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
 .list_filter{
     display: none;
 }
-
+.card_scroll{
+    position: sticky;
+    bottom: 70px;
+}
+.card_scroll_img{
+    position: absolute;
+    width: 70px;
+    z-index: -1;
+}
